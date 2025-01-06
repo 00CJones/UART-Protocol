@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Mon Dec 16 09:25:56 2024
+# Process ID: 16468
+# Current directory: C:/Users/Admin/ECEN340Vivado/UARTLab - FinishedBackup
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18920 C:\Users\Admin\ECEN340Vivado\UARTLab - FinishedBackup\UARTLab.xpr
+# Log file: C:/Users/Admin/ECEN340Vivado/UARTLab - FinishedBackup/vivado.log
+# Journal file: C:/Users/Admin/ECEN340Vivado/UARTLab - FinishedBackup\vivado.jou
+# Running On        :DESKTOP-8KRRK8E
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz
+# CPU Frequency     :2904 MHz
+# CPU Physical cores:2
+# CPU Logical cores :4
+# Host memory       :17023 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19573 MB
+# Available Virtual :8441 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Admin/ECEN340Vivado/UARTLab - FinishedBackup/UARTLab.xpr}
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/Admin/ECEN340Vivado/UARTLab - FinishedBackup/UARTLab.runs/impl_1/UART_top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Admin/ECEN340Vivado/UARTLab - FinishedBackup/UARTLab.runs/impl_1/UART_top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
